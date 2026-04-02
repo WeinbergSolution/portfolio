@@ -1,0 +1,55 @@
+@use '../../../../styles/abstacts/variables' as color;
+
+.hero-basic-css {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    to top right,
+    color.$primary-color 40%,
+    #0f2f2a 80%,
+    color.$secondary-color 100%
+  );
+}
+
+.hero-content {
+  text-align: center;
+  color: color.$textPrimary-color;
+  margin-left: 12px;
+  margin-right: 12px;
+  p {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-family: 'karla bold', monospace;
+    font-weight: 700;
+
+    font-size: 44px;
+    margin-bottom: 1rem;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 145px;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid color.$textPrimary-color;
+  }
+
+  a {
+    font-family: 'karla Regular', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

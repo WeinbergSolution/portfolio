@@ -3,13 +3,14 @@ import { RouterLink } from '@angular/router';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-hero',
+  selector: 'app-navbar',
   imports: [RouterLink, TranslatePipe],
-  templateUrl: './hero.html',
-  styleUrls: ['./hero.scss'],
+  templateUrl: './navbar.html',
+  styleUrls: ['./navbar.scss'],
 })
-export class Hero {
+export class Navbar {
   private translate = inject(TranslateService);
+
   useLanguage(language: string): void {
     this.translate.use(language);
   }

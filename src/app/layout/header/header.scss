@@ -1,0 +1,23 @@
+@use '../../styles/abstacts/variables' as color;
+
+.header-basic-css {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%);
+  color: color.$textPrimary-color;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image {
+  width: 36px;
+  height: 48px;
+  margin-right: 5px;
+}

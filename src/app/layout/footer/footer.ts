@@ -1,9 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [TranslatePipe, RouterLink],
   templateUrl: './footer.html',
-  styleUrl: './footer.scss',
+  styleUrls: ['./footer.scss'],
 })
-export class Footer {}
+export class Footer {
+  private translate = inject(TranslateService);
+
+  useLanguage(language: string): void {
+    this.translate.use(language);
+  }
+}

@@ -1,0 +1,27 @@
+footer {
+  background: #1c1c1c;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-content-wrapper {
+  display: flex;
+
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.footer-sozial-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-image {
+  width: 36px;
+  height: 48px;
+  margin-right: 5px;
+}

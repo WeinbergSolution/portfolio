@@ -1,0 +1,63 @@
+{
+    "navbar": {
+        "about": "About me",
+        "skills": "Skills",
+        "projects": "Projects"
+    },
+    "hero": {
+        "headline": "Frontend Developer",
+        "buttonOne": "Check my works",
+        "buttonTwo": "Contact me",
+        "available": "Available for remote work",
+        "job": "Full Stack Developer",
+        "location": "Germany, Hamburg",
+        "slogan": "Open to Work"
+    },
+    "about": {
+        "headline": "Who I am",
+        "descriptionOne": "first paragraph",
+        "descriptionTwo": "second paragraph",
+        "descriptionThree": "third paragraph",
+        "descriptionFour": "fourth paragraph"
+    },
+    "skills": {
+        "headline": "Skills",
+        "description": "Here are some of my skills",
+        "descriptionTwo": "Do you need another skill?",
+        "descriptionThree": "sfsff",
+        "button": "Let's talk"
+    },
+    "future": {
+        "headline": "Future Projects",
+        "description": "Here you can find a selection of my work"
+    },
+    "friends": {
+        "headline": "What my colleagues say about me",
+        "description": "Here you can find a selection of my friends",
+        "friendOneAnswer": "First friend's opinion about me",
+        "friendOneJob": "Full Stack Developer",
+        "friendTwoAnswer": "Second friend's opinion about me",
+        "friendTwoJob": "Frontend Developer",
+        "friendThreeAnswer": "Third friend's opinion about me",
+        "friendThreeJob": "Backend Developer"
+    },
+    "contact": {
+        "headline": "Contact me",
+        "headline-description": "Let's work together",
+        "headlineTwo": "Do you have a problem to solve?",
+        "headlineTwoDescription": "Encourage others to contact you and describe",
+        "description": "Do you need a frontend developer?",
+        "linkTextOne": "Let's talk about it!",
+        "name": "What is your name?",
+        "email": "What is your email address?",
+        "message": "How can I help you?",
+        "privacy-police-text-one": "I have read the",
+        "linkTextTwo": "privacy policy",
+        "privacy-police-text-two": "and agree to the processing of my data as described.",
+        "button": "Say Hello ;)"
+    },
+    "footer": {
+        "job": "Full Stack Developer",
+        "location": "Germany, Hamburg"
+    }
+}

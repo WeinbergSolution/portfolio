@@ -1,0 +1,63 @@
+{
+    "navbar": {
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte"
+    },
+    "hero": {
+        "headline": "Full Stack Entwickler",
+        "buttonOne": "Meine Projekte",
+        "buttonTwo": "Kontakt",
+        "available": "Verfügbar für Remote Arbeit",
+        "job": "Full Stack Entwickler",
+        "location": "Deutschland, Hamburg",
+        "slogan": "Frei für neue Projekte"
+    },
+    "about": {
+        "headline": "Wer ich bin",
+        "descriptionOne": "Erster Absatz",
+        "descriptionTwo": "Zweiter Absatz",
+        "descriptionThree": "Dritter Absatz",
+        "descriptionFour": "Vierter Absatz"
+    },
+    "skills": {
+        "headline": "Fähigkeiten",
+        "description": "Hier sind einige meiner Fähigkeiten",
+        "descriptionTwo": "Benötigst du eine weitere Fähigkeit?",
+        "descriptionThree": "sfsff",
+        "button": "Lass uns sprechen"
+    },
+    "future": {
+        "headline": "Zukünftige Projekte",
+        "description": "Hier finden Sie eine Auswahl meiner Arbeiten"
+    },
+    "friends": {
+        "headline": "Was meine Kollegen über mich sagen",
+        "description": "Hier finden Sie eine Auswahl an Stimmen aus meinem Umfeld",
+        "friendOneAnswer": "Erste Meinung eines Freundes über mich",
+        "friendOneJob": "Full Stack Entwickler",
+        "friendTwoAnswer": "Zweite Meinung eines Freundes über mich",
+        "friendTwoJob": "Frontend Entwickler",
+        "friendThreeAnswer": "Dritte Meinung eines Freundes über mich",
+        "friendThreeJob": "Backend Entwickler"
+    },
+    "contact": {
+        "headline": "Kontakt aufnehmen",
+        "headline-description": "Lassen Sie uns zusammenarbeiten",
+        "headlineTwo": "Haben Sie ein Problem zu lösen?",
+        "headlineTwoDescription": "Beschreiben Sie Ihr Anliegen und nehmen Sie Kontakt auf",
+        "description": "Benötigen Sie einen Frontend-Entwickler?",
+        "linkTextOne": "Lassen Sie uns darüber sprechen!",
+        "name": "Wie ist Ihr Name?",
+        "email": "Wie lautet Ihre E-Mail-Adresse?",
+        "message": "Wie kann ich Ihnen helfen?",
+        "privacy-police-text-one": "Ich habe die",
+        "linkTextTwo": "Datenschutzrichtlinie",
+        "privacy-police-text-two": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "button": "Sag Hallo ;)"
+    },
+    "footer": {
+        "job": "Full Stack Entwickler",
+        "location": "Deutschland, Hamburg"
+    }
+}
