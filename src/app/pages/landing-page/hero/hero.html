@@ -1,0 +1,46 @@
+<Section class="hero">
+  <div class="hero__content">
+    <p>{{ 'hero.headline' | translate }}</p>
+    <h2>Pascal Weinberg</h2>
+    <div class="btn-wrapper">
+      <a [routerLink]="['/future']" class="btn">
+        <span class="btn-text">{{ 'hero.buttonOne' | translate }}</span>
+      </a>
+      <a [routerLink]="['/contact']" class="btn">
+        <span class="btn-text">{{ 'hero.buttonTwo' | translate }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__wrapper-stripe">
+    <div class="hero__wrapper-arrow-down">
+      <span class="hero__arrow-down">&darr;</span>
+      <img class="hero__stripe-left" src="icon/Hero_stripe_left.png" />
+    </div>
+
+    <div class="hero__wrapper-sozial">
+      <a href="mailto:pascalgiercke@gmail.com" target="_blank"
+        ><div class="hero__sozial-icon email"></div
+      ></a>
+      <a href="https://github.com/WeinbergSolution" target="_blank"
+        ><div class="hero__sozial-icon github"></div
+      ></a>
+      <a href="https://de.linkedin.com/in/pascal-weinberg-6a45b1114" target="_blank"
+        ><div class="hero__sozial-icon linkedin"></div
+      ></a>
+      <img class="hero__stripe-right" src="icon/hero_stripe_right_white.png" />
+    </div>
+  </div>
+  <div class="hero__run-bunner">
+    <div class="hero__wrapper-bunner">
+      <div class="laufschrift-container">
+        <p class="laufschrift-text">
+          {{ 'hero.available' | translate }} ;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;
+          {{ 'hero.job' | translate }} &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;
+          {{ 'hero.location' | translate }} &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;
+          {{ 'hero.slogan' | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</Section>

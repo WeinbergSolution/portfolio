@@ -1,0 +1,228 @@
+@use '../../../styles/abstacts/variables' as color;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    to top right,
+    color.$primary-color 40%,
+    #0f2f2a 80%,
+    color.$secondary-color 100%
+  );
+
+  // Hero Content Text & Button //
+
+  &__content {
+    text-align: center;
+    color: color.$textPrimary-color;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 37px;
+    margin-top: 333px;
+
+    p {
+      font-size: 24px;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-family: 'karla bold', monospace;
+      font-weight: 700;
+      font-size: 44px;
+      margin-bottom: 1rem;
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .btn {
+      width: 145px;
+      height: 48px;
+      border-radius: 100px;
+      border: 1px solid color.$textPrimary-color;
+    }
+
+    a {
+      font-family: 'karla Regular', monospace;
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // Hero Arrow & Sozial bereich //
+
+  &__wrapper-stripe {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+    margin-top: 200px;
+  }
+
+  // left Arrow & Stripe
+
+  &__wrapper-arrow-down {
+    z-index: 100;
+    height: 300px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__arrow-down {
+    // animation //
+    display: inline-block;
+    /* Essential for transform/animation to work */
+    /* The Animation: name | duration | timing | repetition */
+    animation: bounce 2s ease-in-out infinite;
+    /* Optional: smoothing for the movement */
+    will-change: transform;
+
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(10px);
+        /* Moves down by 10px */
+      }
+    }
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: color.$textPrimary-color;
+    font-size: 18px;
+    border-radius: 100px;
+    border: solid 1px color.$textSecondary-color;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  &__stripe-left {
+    width: 1px;
+    height: 220px;
+  }
+
+  // Right SOzial & Stripe
+
+  &__wrapper-sozial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  &__sozial-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__stripe-right {
+    width: 1px;
+    height: 110px;
+  }
+
+  // Run Bunner Hero Bottom //
+
+  &__run-bunner {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    transform: skewY(-4deg);
+    position: relative;
+    bottom: 85px;
+  }
+
+  &__wrapper-bunner {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+// Laufschrift Bunner //
+.laufschrift-container {
+  width: 100%;
+  z-index: 999;
+  overflow: hidden;
+  /* Clips the text at the edges */
+  white-space: nowrap;
+  /* Forces everything into one line */
+  background: transparent;
+  /* Or your background color */
+}
+
+.laufschrift-text {
+  display: inline-block;
+  /* Essential for transform to work */
+  margin: 0;
+  z-index: 999;
+  padding-left: 100%;
+  /* Starts the text just outside the right edge */
+
+  font-family: 'Karla' Regular;
+  font-size: 24px;
+  color: color.$textSecondary-color;
+
+  animation: laufschrift 50s linear infinite;
+}
+
+@keyframes laufschrift {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    /* Moves exactly by its own width to the left */
+    transform: translateX(-100%);
+  }
+}
+
+.hero__sozial-icon {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Default Icons */
+.email {
+  background-image: url('../../../../../public/icon/hero_email_icon.png');
+}
+
+.github {
+  background-image: url('../../../../../public/icon/hero_git_icon.png');
+}
+
+.linkedin {
+  background-image: url('../../../../../public/icon/hero_linkedin_icon.png');
+}
+
+/* Hover → weiße Version */
+.email:hover {
+  background-image: url('../../../../../public/icon/hero_email_icon_white.png');
+}
+
+.github:hover {
+  background-image: url('../../../../../public/icon/hero_git_icon_white.png');
+}
+
+.linkedin:hover {
+  background-image: url('../../../../../public/icon/hero_linkedin_icon_white.png');
+}

@@ -1,6 +1,6 @@
 @use '../../styles/abstacts/variables' as color;
 
-.header-basic-css {
+.header {
   display: flex;
   position: absolute;
   width: 100%;
@@ -9,15 +9,18 @@
   height: 98px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%);
   color: color.$textPrimary-color;
-}
-.header-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.header-image {
-  width: 36px;
-  height: 48px;
-  margin-right: 5px;
+  &__wrapper {
+    width: 360px;
+    height: 60px;
+    margin: 32px 16px 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    width: 36px;
+    height: 48px;
+  }
 }
