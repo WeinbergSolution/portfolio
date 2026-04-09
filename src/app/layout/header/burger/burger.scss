@@ -1,4 +1,96 @@
+@use '../../../styles/abstacts/variables' as color;
+
 img {
   width: 48px;
   height: 48px;
+  cursor: pointer;
+}
+
+img:hover {
+  filter: brightness(0.8);
+}
+
+.burger_popp {
+  position: absolute;
+  top: 30px;
+  right: 16px;
+  width: 238px;
+  height: 252px;
+
+  background: linear-gradient(
+    to top right,
+    color.$primary-color 40%,
+    #0f2f2a 80%,
+    color.$secondary-color 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  border: solid 1px color.$btn-color;
+}
+
+.burger__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+  a {
+    cursor: pointer;
+    font-family: 'Fira Code Regular', monospace;
+    font-size: 18px;
+    animation: bounce 2s infinite;
+  }
+}
+
+.burger_popp__button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding-right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.language_change {
+  width: 84px;
+  height: 28px;
+  border: solid 1px color.$btn-color;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  align-items: center;
+}
+
+.language_change:hover {
+  border: solid 1px color.$textPrimary-color;
+  width: 85px;
+  height: 29px;
+}
+
+.btn-en {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: color.$btn-color;
+  cursor: pointer;
+}
+
+.btn-de {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: color.$textSecondary-color;
+  cursor: pointer;
 }

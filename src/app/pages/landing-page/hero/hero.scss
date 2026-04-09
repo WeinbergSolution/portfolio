@@ -3,7 +3,8 @@
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 120px;
   align-items: center;
   height: 100vh;
   background: linear-gradient(
@@ -20,8 +21,7 @@
     color: color.$textPrimary-color;
     margin-left: 12px;
     margin-right: 12px;
-    margin-bottom: 37px;
-    margin-top: 333px;
+    margin-top: 231px;
 
     p {
       font-size: 24px;
@@ -47,6 +47,60 @@
       border: 1px solid color.$textPrimary-color;
     }
 
+    .run-text-btn-container-text {
+      color: color.$textPrimary-color;
+      font-family: 'Karla' Regular;
+      font-size: 18px;
+    }
+    .run-text-btn-container-text-two {
+      color: color.$textPrimary-color;
+      font-family: 'Karla' Regular;
+
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      border: 1px solid color.$textSecondary-color;
+      .run-text-btn-container {
+        width: 100%;
+        z-index: 999;
+        overflow: hidden;
+        /* Clips the text at the edges */
+        white-space: nowrap;
+        /* Forces everything into one line */
+        background: transparent;
+        /* Or your background color */
+      }
+
+      .run-text-btn-container-text {
+        display: inline-block;
+        /* Essential for transform to work */
+        margin: 0;
+        z-index: 998;
+        padding-left: 100%;
+        /* Starts the text just outside the right edge */
+
+        color: color.$textSecondary-color;
+
+        animation: laufschrift 5s linear infinite;
+      }
+
+      .run-text-btn-container-text-two {
+        display: inline-block;
+        /* Essential for transform to work */
+        margin: 0;
+        z-index: 999;
+        padding-left: 100%;
+        /* Starts the text just outside the right edge */
+
+        color: color.$textSecondary-color;
+
+        animation: laufschrift 7s linear infinite;
+      }
+    }
+
+    // Laufschrift Bunner //
+
     a {
       font-family: 'karla Regular', monospace;
       font-weight: 400;
@@ -59,12 +113,17 @@
 
   // Hero Arrow & Sozial bereich //
 
+  &__wrapper_bikini_bottom {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
   &__wrapper-stripe {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 16px 0 16px;
-    margin-top: 200px;
   }
 
   // left Arrow & Stripe
@@ -119,6 +178,7 @@
 
   &__wrapper-sozial {
     display: flex;
+    z-index: 1000;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
@@ -139,10 +199,11 @@
 
   &__run-bunner {
     width: 100%;
+
     background: rgba(255, 255, 255, 0.12);
     transform: skewY(-4deg);
-    position: relative;
-    bottom: 85px;
+    position: absolute;
+    bottom: 40px;
   }
 
   &__wrapper-bunner {
@@ -217,12 +278,18 @@
 /* Hover → weiße Version */
 .email:hover {
   background-image: url('../../../../../public/icon/hero_email_icon_white.png');
+  width: 50px;
+  height: 50px;
 }
 
 .github:hover {
   background-image: url('../../../../../public/icon/hero_git_icon_white.png');
+  width: 50px;
+  height: 50px;
 }
 
 .linkedin:hover {
   background-image: url('../../../../../public/icon/hero_linkedin_icon_white.png');
+  width: 50px;
+  height: 50px;
 }
