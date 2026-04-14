@@ -1,4 +1,5 @@
 @use '../../../styles/abstacts/variables' as color;
+@use '../../../styles/abstacts/mixins' as mixins;
 
 img {
   width: 48px;
@@ -29,6 +30,10 @@ img:hover {
   flex-direction: column;
   border-radius: 30px;
   border: solid 1px color.$btn-color;
+}
+
+.burger_popp_toggle {
+  @include mixins.hide-element;
 }
 
 .burger__wrapper {
@@ -93,4 +98,15 @@ img:hover {
   align-items: center;
   color: color.$textSecondary-color;
   cursor: pointer;
+}
+
+/// Media Queries
+///
+/// @media screen and (min-width: 768px) {
+
+@media (min-width: 768px) {
+  img {
+    display: none;
+    @include mixins.hide-element;
+  }
 }

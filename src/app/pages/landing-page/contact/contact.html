@@ -1,1 +1,63 @@
-<p>contact works!</p>
+<section class="contact">
+  <div class="contact__container">
+    <div class="contact__container-head">
+      <p>{{ 'contact.headline' | translate }}</p>
+      <h2>{{ 'contact.headline-description' | translate }}</h2>
+    </div>
+    <div class="contact__container-body">
+      <p>{{ 'contact.headlineTwo' | translate }}</p>
+      <span class="contact__container-text">{{
+        'contact.headlineTwoDescription' | translate
+      }}</span>
+      <span class="contact__container-description"
+        >{{ 'contact.description' | translate }}
+        <span class="contact__container-description-text">{{
+          'contact.linkTextOne' | translate
+        }}</span></span
+      >
+    </div>
+    <div class="contact__container-form">
+      <form>
+        <div class="contact__container-form-wrapper">
+          <p>{{ 'contact.name' | translate }}</p>
+          <input type="text" placeholder="{{ 'contact.namePlaceholder' | translate }}" required />
+        </div>
+        <div class="contact__container-form-wrapper">
+          <p>{{ 'contact.email' | translate }}</p>
+          <input type="email" placeholder="{{ 'contact.emailPlaceholder' | translate }}" required />
+        </div>
+        <div class="contact__container-form-wrapper">
+          <p>{{ 'contact.message' | translate }}</p>
+          <textarea
+            placeholder="{{ 'contact.messagePlaceholder' | translate }}"
+            required
+          ></textarea>
+        </div>
+
+        <div class="contact__container-form-privacy">
+          <div class="contact__container-form-privacy-wrapper">
+            <div class="contact__container-form-privacy-checkbox">
+              <input type="checkbox" required />
+            </div>
+            <div class="contact__container-form-privacy-text">
+              <span>
+                {{ 'contact.privacy-police-text-one' | translate }}
+                <span class="contact__container-form-privacy-link">{{
+                  'contact.linkTextTwo' | translate
+                }}</span>
+              </span>
+              <div class="contact__container-form-privacy-text-two">
+                <span>{{ 'contact.privacy-police-text-two' | translate }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact__container-form-privacy-button-wrapper">
+            <button class="contact__container-form-privacy-button" type="submit">
+              {{ 'contact.button' | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

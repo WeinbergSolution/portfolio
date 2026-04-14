@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-friends',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './friends.html',
-  styleUrl: './friends.scss',
+  styleUrls: ['./friends.scss'],
 })
-export class Friends {}
+export class Friends {
+  private translate = inject(TranslateService);
+}

@@ -1,0 +1,82 @@
+@use '../../../styles/abstacts/variables' as color;
+
+.projects {
+  margin: 100px 16px 100px 16px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+      font-family: 'Karla Regular', monospace;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: color.$textSecondary-color;
+    }
+
+    h2 {
+      color: color.$textSecondary-color;
+      font-family: 'Fira Code Regular', monospace;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: -3%;
+    }
+
+    &-description {
+      margin-top: 16px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid color.$textSecondary-color;
+    }
+  }
+
+  &__container-project {
+    width: 358;
+    height: 125;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    opacity: 1;
+    border-bottom-width: 1px;
+    border-bottom: 1px solid color.$textSecondary-color;
+
+    // Beim Klicken
+    // Overlay öffnen: "04_b";
+    // Animate: Sofort;
+    animation-duration: 0ms;
+    cursor: pointer;
+
+    h3 {
+      font-family: 'Fira Code Regular', monospace;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 24px;
+
+      line-height: 120%;
+      letter-spacing: 0%;
+      padding-bottom: 10px;
+    }
+
+    span {
+      font-family: 'Karla Regular', monospace;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
+  }
+
+  &__stripe {
+    color: color.$textSecondary-color;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}

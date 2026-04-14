@@ -1,0 +1,23 @@
+<section class="projects">
+  <div class="projects__container">
+    <p>Portfolio</p>
+    <h2>{{ 'future.headline' | translate }}</h2>
+    <span class="projects__container-description">{{ 'future.description' | translate }}</span>
+    <div>
+      @for (project of projects; track project.name) {
+        <div class="projects__container-project">
+          <h3>{{ project.name }}</h3>
+
+          @for (skill of project.skills; track $index) {
+            @if ($index <= project.skills.length - 1) {
+              <span class="projects__container-project-skill">{{ skill }}</span>
+              @if ($index < project.skills.length - 1) {
+                <span class="projects__stripe">|</span>
+              }
+            }
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>

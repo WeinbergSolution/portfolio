@@ -1,31 +1,37 @@
 <footer>
-  <div class="footer-wrapper">
-    <div class="footer-content-wrapper">
-      <img class="footer-image" src="img/Vector.png" alt="Footer Image" />
-      <div class="footer-wrapper-content">
-        <h2 class="name">Pascal</h2>
-        <h2 class="name">Weinberg</h2>
-      </div>
-      <p class="footer-text">{{ 'footer.job' | translate }}</p>
-      <p class="footer-text">{{ 'footer.location' | translate }}</p>
-    </div>
+  <section>
+    <div class="footer">
+      <div class="footer__content-wrapper-outer">
+        <div class="footer__content-wrapper-inner">
+          <div class="footer__img-wrapper">
+            <img class="footer__image" src="img/Vector.png" alt="Footer Image" />
+            <div class="footer__name-wrapper">
+              <p>Pascal</p>
+              <p>Weinberg</p>
+            </div>
+          </div>
+          <div class="footer__text-wrapper">
+            <p class="footer-text">{{ 'footer.job' | translate }}</p>
+            <p class="footer-text">{{ 'footer.location' | translate }}</p>
+          </div>
+        </div>
+        <div class="footer__sozial-wrapper">
+          <a href="https://github.com/pascal-weinberg" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pascal-weinberg/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
 
-    <div>
-      <p class="footer-text">© Pascal Weinberg 2026</p>
+          <a href="mailto:pascalgiercke@gmail.com"> Email </a>
+          <a [routerLink]="['/imprint']">Legal Notice</a>
+        </div>
+      </div>
+      <span class="footer__copyright">© Pascal Weinberg 2026</span>
     </div>
-    <div class="footer-sozial-wrapper">
-      <a
-        href="https://www.linkedin.com/in/pascal-weinberg/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>
-      <a href="https://github.com/pascal-weinberg" target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
-      <a href="mailto:pascalgiercke@gmail.com"> Email </a>
-      <a [routerLink]="['/imprint']">Legal Notice</a>
-    </div>
-  </div>
+  </section>
 </footer>

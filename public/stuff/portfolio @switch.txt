@@ -1,0 +1,21 @@
+@for (project of projects; track project.name) {
+        <div class="projects__container-project">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          @for (skill of project.skills; track $index) {
+            <span class="projects__container-project-skill">{{ skill }}</span>
+          }
+          @switch (project.status) {
+            @case ('done') {
+              <p>Status: Done</p>
+            }
+            @case ('in progress') {
+              <p>Status: In Progress</p>
+            }
+            @case ('upcoming') {
+              <p>Status: Upcoming</p>
+            }
+            @default {
+              <p>Status: Unknown</p>
+            }
+          }

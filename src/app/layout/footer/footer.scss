@@ -1,27 +1,65 @@
-footer {
-  background: #1c1c1c;
+@use '../../styles/abstacts/variables' as color;
+
+a,
+p {
+  color: color.$textPrimary-color;
+  font-size: 16px;
+  font-family: 'Karla Regular', monospace;
+  font-weight: 400;
 }
 
-.footer-wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+.footer {
+  padding: 0 16px 0 16px;
+  margin: 100px 0 25px 0;
 
-.footer-content-wrapper {
-  display: flex;
+  &__content-wrapper-outer {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  align-items: flex-start;
-  color: #ffffff;
-}
+  &__content-wrapper-inner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__img-wrapper {
+    display: flex;
+    gap: 8px;
+  }
+  &__name-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    p {
+      font-family: 'Fira Code Regular', monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
 
-.footer-sozial-wrapper {
-  display: flex;
-  flex-direction: column;
-}
+  &__image {
+    width: 36px;
+    height: 48px;
+  }
 
-.footer-image {
-  width: 36px;
-  height: 48px;
-  margin-right: 5px;
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__sozial-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &__copyright {
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+    color: color.$textSecondary-color;
+    font-size: 16px;
+    font-family: 'Fira Code Regular', monospace;
+    font-weight: 400;
+  }
 }

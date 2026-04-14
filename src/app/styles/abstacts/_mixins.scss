@@ -23,3 +23,7 @@
     @content;
   }
 }
+
+@mixin hide-element {
+  display: none !important;
+}

@@ -1,0 +1,94 @@
+@use '../../../styles/abstacts/variables' as color;
+
+.friends {
+  margin: 100px 16px 0 16px;
+
+  &__navigate-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  &__content-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 32px;
+
+    h2 {
+      font-family: 'Fira Code', monospace;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 24px;
+
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: color.$textSecondary-color;
+    }
+  }
+
+  &__content-card {
+    opacity: 1;
+    padding-top: 40px;
+    border-radius: 32px;
+    border-width: 1px;
+
+    background: rgba(61, 207, 182, 0.3);
+    border: 1px solid color.$textSecondary-color;
+    margin-bottom: 32px;
+
+    p {
+      font-family: 'Karla Regular', monospace;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      padding: 40px;
+    }
+
+    span {
+      font-family: 'Fira Code', monospace;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      vertical-align: middle;
+    }
+
+    img {
+      width: 66px;
+      height: 48px;
+      opacity: 1;
+    }
+  }
+
+  &__content-card--quotes {
+    position: relative;
+    top: 38px;
+    left: 2px;
+  }
+
+  &__navigate {
+    width: 184px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8px;
+      height: 8px;
+      gap: 16px;
+    }
+
+    .arrow {
+      padding: 8px;
+    }
+  }
+}

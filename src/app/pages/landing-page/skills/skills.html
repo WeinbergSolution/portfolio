@@ -1,1 +1,82 @@
-<p>skills works!</p>
+<section class="skills">
+  <div class="skills__headline">
+    <span>Technologies</span>
+  </div>
+  <div class="skills__content-wrapper">
+    <div class="skills__content-wrapper-inner">
+      <h2>{{ 'skills.headline' | translate }}</h2>
+    </div>
+    <div class="skills__content-wrapper-description">
+      <div class="skills__content-wrapper-description-inner">
+        <p>{{ 'skills.description' | translate }}</p>
+      </div>
+      <div>
+        <div class="skills__content-wrapper-description-text">
+          <span class="skills__content-wrapper-description-text-highlight">
+            {{ 'skills.descriptionTwo' | translate }}
+          </span>
+          <span class="skills__content-wrapper-description-text-highlight-two">{{
+            'skills.descriptionThree' | translate
+          }}</span>
+        </div>
+
+        <p>
+          {{ 'skills.descriptionFour' | translate }}
+        </p>
+      </div>
+    </div>
+    <a [routerLink]="['/future']" class="skills__button">
+      <div class="run-text-btn-container">
+        <p class="run-text-btn-container-text-two">
+          {{ 'skills.button' | translate }}
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="skills__icon_wrapper">
+    <div class="skills__background">
+      <img src="icon/html.png" alt="HTML Icon" class="skills__background-image" />
+      <span class="skills__background-text"> HTML</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/Css.png" alt="CSS Icon" class="skills__background-image" />
+      <span class="skills__background-text"> CSS</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/Javascript.png" alt="JavaScript Icon" class="skills__background-image" />
+      <span class="skills__background-text"> JavaScript</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/md.png" alt="Material Design Icon" class="skills__background-image" />
+      <span class="skills__background-text"> Material Design</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/typescript.png" alt="TypeScript Icon" class="skills__background-image" />
+      <span class="skills__background-text"> TypeScript</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/Angular.png" alt="Angular Icon" class="skills__background-image" />
+      <span class="skills__background-text"> Angular</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/Firebase.png" alt="Firebase Icon" class="skills__background-image" />
+      <span class="skills__background-text"> Firebase</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/Git.png" alt="Git Icon" class="skills__background-image" />
+      <span class="skills__background-text"> Git</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/rest-api.png" alt="REST-API Icon" class="skills__background-image" />
+      <span class="skills__background-text"> REST-API</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/Scrum.png" alt="Scrum Icon" class="skills__background-image" />
+      <span class="skills__background-text"> Scrum</span>
+    </div>
+    <div class="skills__background">
+      <img src="icon/gm.png" alt="CSS Icon" class="skills__background-image" />
+      <span class="skills__background-text"> Growth mindset</span>
+    </div>
+  </div>
+</section>

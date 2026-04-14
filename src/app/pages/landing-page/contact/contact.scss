@@ -1,0 +1,178 @@
+@use '../../../styles/abstacts/variables' as color;
+
+.contact {
+  margin: 100px 16px 100px 16px;
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-family: 'Karla Medium', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: color.$textSecondary-color;
+  }
+
+  h2 {
+    color: color.$textSecondary-color;
+    font-family: 'Fira Code', monospace;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -3%;
+    hyphens: auto;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    color: color.$textSecondary-color;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+
+  &-description {
+    margin-top: 16px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid color.$textSecondary-color;
+  }
+}
+
+.contact__container-head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.contact__container-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__container-description-text {
+  color: color.$textSecondary-color;
+}
+
+.contact__container-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 358;
+  height: 125;
+
+  padding: 32px 16px 32px 16px;
+
+  opacity: 1;
+  border-bottom-width: 1px;
+  border-bottom: 1px solid color.$textSecondary-color;
+
+  // Beim Klicken
+  // Overlay öffnen: "04_b";
+  // Animate: Sofort;
+  animation-duration: 0ms;
+  cursor: pointer;
+
+  input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Karla Regular', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+
+  textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Karla Regular', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+}
+.contact__container-form-privacy {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 16px;
+
+  span {
+    font-family: 'Karla Regular', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+
+  &-wrapper {
+    display: flex;
+    gap: 22px;
+  }
+
+  &-checkbox {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 35px;
+
+    input {
+      opacity: 1;
+      cursor: pointer;
+      height: 18px;
+      width: 18px;
+      background: transparent;
+      appearance: none;
+      border: 2px solid color.$textSecondary-color;
+    }
+  }
+
+  &-text {
+    padding-bottom: 10px;
+  }
+
+  .contact__container-form-privacy-text-two {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  .contact__container-form-privacy-link {
+    color: color.$textSecondary-color;
+
+    cursor: pointer;
+  }
+
+  .contact__container-form-privacy-button {
+    width: 139px;
+    height: 48px;
+    gap: 10px;
+
+    opacity: 1;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-radius: 100px;
+    border-width: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

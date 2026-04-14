@@ -5,27 +5,29 @@
         "projects": "Projekte"
     },
     "hero": {
-        "headline": "Full Stack Entwickler",
+        "headline": "Web Developer",
         "buttonOne": "Meine Projekte",
         "buttonTwo": "Lass uns Reden",
         "available": "Verfügbar für Remote Arbeit",
         "job": "Full Stack Entwickler",
-        "location": "Deutschland, Hamburg",
+        "location": "Hamburg Deutschland",
         "slogan": "Frei für neue Projekte"
     },
     "about": {
         "headline": "Wer ich bin",
-        "descriptionOne": "Erster Absatz",
-        "descriptionTwo": "Zweiter Absatz",
-        "descriptionThree": "Dritter Absatz",
-        "descriptionFour": "Vierter Absatz"
+        "aboutMe": "Über mich",
+        "descriptionOne": "Hey, ich bin Lukas! Schreibe ein paar Informationen über dich, die einen Bezug zur IT haben. Warum begeisterst du dich fürs Programmieren? Was ist deine Inspirationsquelle, um deine Programmierkenntnisse zu verbessern?",
+        "descriptionTwo": "Wo bist du ansässig? Wärst du offen für Remote-Arbeit oder möglicherweise für einen Umzug?",
+        "descriptionThree": "Zeige, dass du aufgeschlossen bist. Bist du begeistert davon, neue Technologien zu erlernen und deine Fähigkeiten zu verbessern?",
+        "descriptionFour": "Eine kurze Beschreibung deiner Herangehensweise an Problemlösungen. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst? Du kannst einige Schlüsselbegriffe einbeziehen, wie zum Beispiel: analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit."
     },
     "skills": {
         "headline": "Fähigkeiten",
-        "description": "Hier sind einige meiner Fähigkeiten",
-        "descriptionTwo": "Benötigst du eine weitere Fähigkeit?",
-        "descriptionThree": "sfsff",
-        "button": "Lass uns sprechen"
+        "description": "Eine kurze Vorstellung deiner Fähigkeiten. Hebe deine Erfahrung im Umgang mit verschiedenen Frontend-Technologien hervor und betone deine Offenheit, neue Technologien zu erlernen und dich an sie anzupassen. Zeige, wie wichtig es dir ist, mit den schnellen Veränderungen in der Webentwicklung Schritt zu halten.",
+        "descriptionTwo": "Benötigst du",
+        "descriptionThree": "eine weitere Fähigkeit?",
+        "descriptionFour": "Kontaktiere mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+        "button": "Reden wir!"
     },
     "future": {
         "headline": "Zukünftige Projekte",
@@ -33,31 +35,33 @@
     },
     "friends": {
         "headline": "Was meine Kollegen über mich sagen",
-        "description": "Hier finden Sie eine Auswahl an Stimmen aus meinem Umfeld",
-        "friendOneAnswer": "Erste Meinung eines Freundes über mich",
-        "friendOneJob": "Full Stack Entwickler",
-        "friendTwoAnswer": "Zweite Meinung eines Freundes über mich",
-        "friendTwoJob": "Frontend Entwickler",
-        "friendThreeAnswer": "Dritte Meinung eines Freundes über mich",
-        "friendThreeJob": "Backend Entwickler"
+        "friendOne": "H.Janisch - Team Partner",
+        "friendOneAnswer": "Lukas hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
+        "friendTwo": "Zweite Meinung eines Freundes über mich",
+        "friendTwoAnswer": "Frontend Entwickler",
+        "friendThree": "Dritte Meinung eines Freundes über mich",
+        "friendThreeAnswer": "Backend Entwickler"
     },
     "contact": {
         "headline": "Kontakt aufnehmen",
         "headline-description": "Lassen Sie uns zusammenarbeiten",
         "headlineTwo": "Haben Sie ein Problem zu lösen?",
-        "headlineTwoDescription": "Beschreiben Sie Ihr Anliegen und nehmen Sie Kontakt auf",
+        "headlineTwoDescription": "Ermutige andere, dich zu kontaktieren, und beschreibe, für welche Position du dich interessierst. Zeige, dass du mit deiner Arbeit einen Mehrwert für ihre Projekte schaffen wirst.",
         "description": "Benötigen Sie einen Frontend-Entwickler?",
         "linkTextOne": "Lassen Sie uns darüber sprechen!",
         "name": "Wie ist Ihr Name?",
+        "namePlaceholder": "Ihr Name hier",
         "email": "Wie lautet Ihre E-Mail-Adresse?",
+        "emailPlaceholder": "deinemail@mail.de",
         "message": "Wie kann ich Ihnen helfen?",
+        "messagePlaceholder": "Hallo Lukas, ich interessiere mich für..",
         "privacy-police-text-one": "Ich habe die",
         "linkTextTwo": "Datenschutzrichtlinie",
         "privacy-police-text-two": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "button": "Sag Hallo ;)"
     },
     "footer": {
-        "job": "Full Stack Entwickler",
-        "location": "Deutschland, Hamburg"
+        "job": "Web Developer",
+        "location": "Hamburg Germany"
     }
 }
