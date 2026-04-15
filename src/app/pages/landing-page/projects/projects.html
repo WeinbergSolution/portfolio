@@ -1,9 +1,9 @@
 <section class="projects">
   <div class="projects__container">
-    <p>Portfolio</p>
+    <p class="gap16">Portfolio</p>
     <h2>{{ 'future.headline' | translate }}</h2>
     <span class="projects__container-description">{{ 'future.description' | translate }}</span>
-    <div>
+    <div class="projects__container-projects">
       @for (project of projects; track project.name) {
         <div class="projects__container-project">
           <h3>{{ project.name }}</h3>

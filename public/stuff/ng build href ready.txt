@@ -1,0 +1,1 @@
+ng build --base-href /angular-projects/modul-15/portfolio/

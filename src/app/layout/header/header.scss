@@ -4,7 +4,7 @@
   display: flex;
   position: absolute;
   width: 100%;
-  justify-content: space-between;
+
   align-items: center;
   height: 98px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%);
@@ -22,5 +22,12 @@
   &__image {
     width: 36px;
     height: 48px;
+  }
+
+  @media (min-width: 768px) {
+    &__wrapper {
+      margin: 32px 96px 0px 96px;
+      flex-direction: row-reverse;
+    }
   }
 }

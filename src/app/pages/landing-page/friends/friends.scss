@@ -91,4 +91,14 @@
       padding: 8px;
     }
   }
+
+  &__name {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .friends {
+    margin: 140px 0px 0 0px;
+  }
 }

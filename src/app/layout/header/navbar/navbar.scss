@@ -1,23 +1,63 @@
 @use '../../../styles/abstacts/variables' as color;
+@use '../../../styles/abstacts/mixins' as mixins;
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
   gap: 20px;
 }
 
 .language_change {
+  width: 84px;
+  height: 28px;
+  border: solid 1px color.$btn-color;
+  border-radius: 100px;
   display: flex;
   justify-content: space-between;
+  margin: 0 10px 0 10px;
   align-items: center;
-  width: 60px;
-  height: 40px;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: color.$btn-color;
-  border-radius: 100px;
+}
 
+.language_change:hover {
+  border: solid 1px color.$textPrimary-color;
+  width: 85px;
+  height: 29px;
+}
+
+.btn-en {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: color.$textSecondary-color;
   cursor: pointer;
+}
+
+.btn-de {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: color.$textSecondary-color;
+  cursor: pointer;
+}
+
+.active {
+  background: color.$btn-color;
+  color: color.$textPrimary-color;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    @include mixins.hide-element;
+  }
 }

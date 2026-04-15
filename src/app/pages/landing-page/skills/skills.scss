@@ -183,3 +183,13 @@ p {
     }
   }
 }
+
+@media (min-width: 768px) {
+  .skills {
+    margin: 166px 96px 0 96px;
+  }
+
+  .skills__content-wrapper {
+    display: flex;
+  }
+}

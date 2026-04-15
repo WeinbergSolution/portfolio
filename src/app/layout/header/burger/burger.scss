@@ -13,10 +13,10 @@ img:hover {
 
 .burger_popp {
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 16px;
-  width: 238px;
-  height: 252px;
+  width: 200px;
+  height: 220px;
 
   background: linear-gradient(
     to top right,
@@ -86,7 +86,7 @@ img:hover {
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  background-color: color.$btn-color;
+  color: color.$textSecondary-color;
   cursor: pointer;
 }
 
@@ -100,6 +100,14 @@ img:hover {
   cursor: pointer;
 }
 
+.active {
+  background: color.$btn-color;
+  color: color.$textPrimary-color;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /// Media Queries
 ///
 /// @media screen and (min-width: 768px) {

@@ -6,7 +6,6 @@
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
 
     p {
       font-family: 'Karla Regular', monospace;
@@ -29,8 +28,8 @@
     }
 
     &-description {
-      margin-top: 16px;
-      padding-bottom: 40px;
+      margin-top: 32px;
+      padding-bottom: 56px;
       border-bottom: 1px solid color.$textSecondary-color;
     }
   }
@@ -78,5 +77,19 @@
     color: color.$textSecondary-color;
     padding-left: 3px;
     padding-right: 3px;
+  }
+}
+
+.projects__container-project:hover {
+  background: rgba(61, 207, 182, 0.3);
+}
+
+.gap16 {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    margin: 100px 464px 0 96px;
   }
 }

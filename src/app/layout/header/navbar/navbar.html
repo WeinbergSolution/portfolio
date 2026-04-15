@@ -1,7 +1,11 @@
-<section class="section navbar">
+<section class="navbar">
   <div class="btn language_change">
-    <span (click)="useLanguage('en')" class="btn">EN</span>
-    <span (click)="useLanguage('de')" class="btn">DE</span>
+    <span [class.active]="translate.currentLang === 'en'" (click)="useLanguage('en')" class="btn-en"
+      >EN</span
+    >
+    <span [class.active]="translate.currentLang === 'de'" (click)="useLanguage('de')" class="btn-de"
+      >DE</span
+    >
   </div>
   <p></p>
   <a [routerLink]="['/about']">{{ 'navbar.about' | translate }}</a>

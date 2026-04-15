@@ -1,13 +1,24 @@
-<img src="icon/burger_icon.png" />
-<div class="burger_popp_toggle">
-  <div class="burger_popp_toggle">
-    <button class="burger_popp__button" (click)="toggleBurger()">X</button>
+<img src="icon/burger_icon.png" (click)="toggleField()" />
+
+<div [class]="classToggled ? `burger_popp` : `burger_popp_toggle`">
+  <div [class]="classToggled ? `burger__wrapper` : `burger_popp_toggle`">
+    <button class="burger_popp__button" (click)="toggleField()">X</button>
     <a [routerLink]="['/about']">{{ 'navbar.about' | translate }}</a>
     <a [routerLink]="['/skills']">{{ 'navbar.skills' | translate }}</a>
     <a [routerLink]="['/future']">{{ 'navbar.projects' | translate }}</a>
     <div class="language_change">
-      <span (click)="useLanguage('en')" class="btn-en">EN</span>
-      <span (click)="useLanguage('de')" class="btn-de">DE</span>
+      <span
+        [class.active]="translate.currentLang === 'en'"
+        (click)="useLanguage('en')"
+        class="btn-en"
+        >EN</span
+      >
+      <span
+        [class.active]="translate.currentLang === 'de'"
+        (click)="useLanguage('de')"
+        class="btn-de"
+        >DE</span
+      >
     </div>
   </div>
 </div>
