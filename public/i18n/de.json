@@ -58,10 +58,41 @@
         "privacy-police-text-one": "Ich habe die",
         "linkTextTwo": "Datenschutzrichtlinie",
         "privacy-police-text-two": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-        "button": "Sag Hallo ;)"
+        "button": "Sag Hallo ;)",
+        "errorOne": "Hoppla! Deine E-Mail-Adresse ist erforderlich.",
+        "errorTwo": "Dies ist keine gültige E-Mail-Adresse.",
+        "errorThree": "Hoppla! Es scheint, dass dein Name fehlt.",
+        "errorFour": "Was möchtest du entwickeln?"
     },
     "footer": {
         "job": "Web Developer",
         "location": "Hamburg Germany"
+    },
+    "legalnotice": {
+        "headline": "Impressum",
+        "imprintTitle": "Impressum",
+        "studentNames": "[Liste der Studierenden]",
+        "operatorAddress": "[Adresse des JOIN-Betreibers – z. B. eines der Studierenden]",
+        "postcodeCity": "[Postleitzahl und Stadt]",
+        "exploringBoardTitle": "Erkundung des Boards",
+        "emailLabel": "E-Mail",
+        "emailValue": "[E-Mail-Adresse]",
+        "acceptanceTitle": "Akzeptanz der Nutzungsbedingungen",
+        "acceptanceText": "Durch den Zugriff auf und die Nutzung des Portfolios (Produkt) erkennen Sie die folgenden Allgemeinen Geschäftsbedingungen sowie alle Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit vorgelegt werden. Wir, die aufgeführten Studierenden, behalten uns das Recht vor, diese Bedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern.",
+        "scopeTitle": "Umfang und Eigentum am Produkt",
+        "scopeText": "Das Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp der Developer Akademie GmbH entwickelt. Es dient ausschließlich Bildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine Garantie für eine kontinuierliche Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsmerkmale dieses Produkts übernehmen.",
+        "scopeOwnership": "Das Design des Portfolios ist Eigentum der Developer Akademie GmbH. Jede unbefugte Nutzung, Vervielfältigung, Änderung, Verbreitung oder Nachbildung des Designs ist strengstens untersagt.",
+        "proprietaryTitle": "Eigentumsrechte",
+        "proprietaryText": "Abgesehen von dem Design, das der Developer Akademie GmbH gehört, behalten wir, die aufgeführten Studierenden, sämtliche Eigentumsrechte am Portfolio, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und sonstigen geschützten Informationen.",
+        "useTitle": "Nutzung des Produkts",
+        "useText": "Das Portfolio darf ausschließlich zu rechtmäßigen Zwecken und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften genutzt werden. Jegliche Nutzung für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist strengstens untersagt. Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Nutzern des Portfolios.",
+        "disclaimerTitle": "Haftungsausschluss und Haftungsbeschränkung",
+        "disclaimerText": "Das Portfolio wird ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Dies umfasst unter anderem die stillschweigenden Garantien der Marktgängigkeit, der Eignung für einen bestimmten Zweck sowie der Nichtverletzung von Rechten Dritter. In keinem Fall haften wir, die aufgeführten Studierenden, oder die Developer Akademie GmbH für direkte, indirekte, zufällige, besondere oder Folgeschäden, einschließlich, aber nicht beschränkt auf Schäden durch entgangenen Gewinn, Verlust von Daten oder immateriellen Werten, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die aus der Nutzung oder Leistung des Portfolios entstehen.",
+        "indemnityTitle": "Freistellung",
+        "indemnityText": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie GmbH sowie deren verbundene Unternehmen, Partner, leitende Angestellte, Direktoren, Vertreter und Mitarbeiter von sämtlichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen und schadlos zu halten, die aus Ihrer Nutzung des Portfolios oder aus einem Verstoß gegen diese rechtlichen Hinweise entstehen.",
+        "contactText": "Bei Fragen oder Mitteilungen kontaktieren Sie uns bitte unter",
+        "contactEmail": "[Kontakt-E-Mail]",
+        "dateLabel": "Datum",
+        "dateValue": "26. Juli 2025"
     }
 }

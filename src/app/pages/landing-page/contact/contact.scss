@@ -219,6 +219,23 @@
   }
 }
 
+// Diese Klassen werden durch Angular aktiv, wenn Fehler auftreten
+.error-text {
+  color: #e74c3c !important;
+}
+
+.error-border {
+  border-bottom: 1px solid #e74c3c !important;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  height: 18px; // Verhindert Layout-Verschiebung
+  margin-top: 4px;
+}
+
 @media (min-width: 768px) {
   .contact {
     margin: 140px 96px 0 96px;

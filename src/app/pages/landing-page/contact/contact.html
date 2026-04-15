@@ -19,27 +19,69 @@
       </div>
     </div>
     <div class="contact__container-form">
-      <form>
-        <div class="contact__container-form-wrapper">
-          <p>{{ 'contact.name' | translate }}</p>
-          <input type="text" placeholder="{{ 'contact.namePlaceholder' | translate }}" required />
+      <form [formGroup]="contactForm" (ngSubmit)="submit()">
+        <div
+          class="contact__container-form-wrapper"
+          [class.error-border]="name?.touched && name?.invalid"
+        >
+          <p [class.error-text]="name?.touched && name?.invalid">
+            {{ 'contact.name' | translate }}
+          </p>
+          <input
+            type="text"
+            placeholder="{{ 'contact.namePlaceholder' | translate }}"
+            formControlName="name"
+          />
+          <div class="error-message">
+            @if (name?.touched && name?.errors?.['required']) {
+              {{ 'contact.errorThree' | translate }}
+            }
+          </div>
         </div>
-        <div class="contact__container-form-wrapper">
-          <p>{{ 'contact.email' | translate }}</p>
-          <input type="email" placeholder="{{ 'contact.emailPlaceholder' | translate }}" required />
+
+        <div
+          class="contact__container-form-wrapper"
+          [class.error-border]="email?.touched && email?.invalid"
+        >
+          <p [class.error-text]="email?.touched && email?.invalid">
+            {{ 'contact.email' | translate }}
+          </p>
+          <input
+            type="email"
+            placeholder="{{ 'contact.emailPlaceholder' | translate }}"
+            formControlName="email"
+          />
+          <div class="error-message">
+            @if (email?.touched && email?.errors?.['required']) {
+              {{ 'contact.errorOne' | translate }}
+            } @else if (email?.touched && email?.errors?.['email']) {
+              {{ 'contact.errorTwo' | translate }}
+            }
+          </div>
         </div>
-        <div class="contact__container-form-wrapper">
-          <p>{{ 'contact.message' | translate }}</p>
+
+        <div
+          class="contact__container-form-wrapper"
+          [class.error-border]="message?.touched && message?.invalid"
+        >
+          <p [class.error-text]="message?.touched && message?.invalid">
+            {{ 'contact.message' | translate }}
+          </p>
           <textarea
             placeholder="{{ 'contact.messagePlaceholder' | translate }}"
-            required
+            formControlName="message"
           ></textarea>
+          <div class="error-message">
+            @if (message?.touched && message?.errors?.['required']) {
+              {{ 'contact.errorFour' | translate }}
+            }
+          </div>
         </div>
 
         <div class="contact__container-form-privacy">
           <div class="contact__container-form-privacy-wrapper">
             <div class="contact__container-form-privacy-checkbox">
-              <input type="checkbox" required />
+              <input type="checkbox" id="privacy" formControlName="privacy" />
             </div>
             <div class="contact__container-form-privacy-text">
               <span>
