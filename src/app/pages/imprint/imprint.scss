@@ -1,0 +1,86 @@
+@use '../../styles/abstacts/variables' as color;
+
+.imprint {
+  display: flex;
+  flex-direction: column;
+  padding: 0 27px 0 20px;
+  padding-top: 180px;
+  gap: 120px;
+  align-items: center;
+
+  background: linear-gradient(
+    to top right,
+    color.$primary-color 40%,
+    #0f2f2a 60%,
+    color.$secondary-color 100%
+  );
+
+  h1 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    padding-bottom: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+  h2 {
+    font-family: 'Karla', monospace;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 23px;
+
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+  p,
+  li {
+    font-family: 'Karla', monospace;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    color: color.$textSecondary-color;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+
+  ul {
+    padding-top: 16px;
+    list-style-position: inside;
+    padding-bottom: 16px;
+  }
+
+  li {
+    padding-left: 10px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.padding16px {
+  padding-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .imprint {
+    padding: 144px 96px 0 96px;
+  }
+
+  .imprint__headline {
+    display: flex;
+    justify-content: center;
+    h1 {
+      font-size: 64px;
+      color: color.$textSecondary-color;
+    }
+  }
+
+  .imprint__content {
+    padding-left: 120px;
+    padding-right: 160px;
+  }
+}

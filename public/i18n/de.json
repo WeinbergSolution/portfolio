@@ -66,17 +66,17 @@
     },
     "footer": {
         "job": "Web Developer",
-        "location": "Hamburg Germany"
+        "location": "Norderstedt Germany"
     },
     "legalnotice": {
-        "headline": "Impressum",
+        "headline": "Legal Notice",
         "imprintTitle": "Impressum",
-        "studentNames": "[Liste der Studierenden]",
-        "operatorAddress": "[Adresse des JOIN-Betreibers – z. B. eines der Studierenden]",
-        "postcodeCity": "[Postleitzahl und Stadt]",
+        "studentNames": "Pascal Weinberg",
+        "operatorAddress": "Albert-Schweitzer-Straße 1",
+        "postcodeCity": "22844 Norderstedt",
         "exploringBoardTitle": "Erkundung des Boards",
         "emailLabel": "E-Mail",
-        "emailValue": "[E-Mail-Adresse]",
+        "emailValue": "Pascal@Pascal.de",
         "acceptanceTitle": "Akzeptanz der Nutzungsbedingungen",
         "acceptanceText": "Durch den Zugriff auf und die Nutzung des Portfolios (Produkt) erkennen Sie die folgenden Allgemeinen Geschäftsbedingungen sowie alle Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit vorgelegt werden. Wir, die aufgeführten Studierenden, behalten uns das Recht vor, diese Bedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern.",
         "scopeTitle": "Umfang und Eigentum am Produkt",
@@ -91,7 +91,7 @@
         "indemnityTitle": "Freistellung",
         "indemnityText": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie GmbH sowie deren verbundene Unternehmen, Partner, leitende Angestellte, Direktoren, Vertreter und Mitarbeiter von sämtlichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen und schadlos zu halten, die aus Ihrer Nutzung des Portfolios oder aus einem Verstoß gegen diese rechtlichen Hinweise entstehen.",
         "contactText": "Bei Fragen oder Mitteilungen kontaktieren Sie uns bitte unter",
-        "contactEmail": "[Kontakt-E-Mail]",
+        "contactEmail": "info@weinberg.de",
         "dateLabel": "Datum",
         "dateValue": "26. Juli 2025"
     }

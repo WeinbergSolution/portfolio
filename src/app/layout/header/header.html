@@ -1,8 +1,15 @@
 <header class="header">
   <div class="header__wrapper">
-    <a [routerLink]="['/']" fragment="hero">
-      <img class="header__image" src="img/pw_logo.png" alt="Header Image"
-    /></a>
+    <div class="header__img-wrapper">
+      <a [routerLink]="['/']" fragment="hero">
+        <img class="header__image" src="img/pw_logo.png" alt="Footer Image"
+      /></a>
+      <div class="header__name-wrapper">
+        <p>Pascal</p>
+        <p>Weinberg</p>
+      </div>
+    </div>
+
     <app-navbar />
     <app-burger class="none" />
   </div>
