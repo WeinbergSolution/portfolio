@@ -114,7 +114,5 @@ img:hover {
 
 @media (min-width: 768px) {
   img {
-    display: none;
-    @include mixins.hide-element;
   }
 }

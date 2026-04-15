@@ -1,37 +1,39 @@
 <section class="skills">
-  <div class="skills__headline">
-    <span>Technologies</span>
-  </div>
-  <div class="skills__content-wrapper">
-    <div class="skills__content-wrapper-inner">
-      <h2>{{ 'skills.headline' | translate }}</h2>
+  <div class="skills__wrapper_all">
+    <div class="skills__headline">
+      <span>Technologies</span>
     </div>
-    <div class="skills__content-wrapper-description">
-      <div class="skills__content-wrapper-description-inner">
-        <p>{{ 'skills.description' | translate }}</p>
+    <div class="skills__content-wrapper">
+      <div class="skills__content-wrapper-inner">
+        <h2>{{ 'skills.headline' | translate }}</h2>
       </div>
-      <div>
-        <div class="skills__content-wrapper-description-text">
-          <span class="skills__content-wrapper-description-text-highlight">
-            {{ 'skills.descriptionTwo' | translate }}
-          </span>
-          <span class="skills__content-wrapper-description-text-highlight-two">{{
-            'skills.descriptionThree' | translate
-          }}</span>
+      <div class="skills__content-wrapper-description">
+        <div class="skills__content-wrapper-description-inner">
+          <p>{{ 'skills.description' | translate }}</p>
         </div>
+        <div>
+          <div class="skills__content-wrapper-description-text">
+            <span class="skills__content-wrapper-description-text-highlight">
+              {{ 'skills.descriptionTwo' | translate }}
+            </span>
+            <span class="skills__content-wrapper-description-text-highlight-two">{{
+              'skills.descriptionThree' | translate
+            }}</span>
+          </div>
 
-        <p>
-          {{ 'skills.descriptionFour' | translate }}
-        </p>
+          <p>
+            {{ 'skills.descriptionFour' | translate }}
+          </p>
+        </div>
       </div>
+      <a [routerLink]="['/contact']" class="skills__button">
+        <div class="run-text-btn-container">
+          <p class="run-text-btn-container-text-two">
+            {{ 'skills.button' | translate }}
+          </p>
+        </div>
+      </a>
     </div>
-    <a [routerLink]="['/contact']" class="skills__button">
-      <div class="run-text-btn-container">
-        <p class="run-text-btn-container-text-two">
-          {{ 'skills.button' | translate }}
-        </p>
-      </div>
-    </a>
   </div>
   <div class="skills__icon_wrapper">
     <div class="skills__background">

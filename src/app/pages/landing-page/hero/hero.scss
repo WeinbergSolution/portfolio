@@ -10,7 +10,7 @@
   background: linear-gradient(
     to top right,
     color.$primary-color 40%,
-    #0f2f2a 80%,
+    #0f2f2a 60%,
     color.$secondary-color 100%
   );
 
@@ -21,30 +21,34 @@
     color: color.$textPrimary-color;
     margin-left: 12px;
     margin-right: 12px;
-    margin-top: 231px;
 
     p {
       font-size: 24px;
-      margin-bottom: 0.5rem;
     }
 
     h2 {
       font-family: 'karla bold', monospace;
       font-weight: 700;
       font-size: 44px;
-      margin-bottom: 1rem;
+      margin-bottom: 40px;
+      margin-top: 12px;
     }
 
     .btn-wrapper {
       display: flex;
-      justify-content: space-around;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
 
     .btn {
-      width: 145px;
+      width: auto;
       height: 48px;
       border-radius: 100px;
       border: 1px solid color.$textPrimary-color;
+
+      padding-right: 24px;
+      padding-left: 24px;
     }
 
     .run-text-btn-container-text {
@@ -130,7 +134,7 @@
 
   &__wrapper-arrow-down {
     z-index: 100;
-    height: 300px;
+
     width: 30px;
     display: flex;
     flex-direction: column;
@@ -295,10 +299,69 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    gap: 0px;
+  }
+  .hero__content {
+    margin: 0;
+    p {
+      font-family: 'Fira Code', monospace;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 40px;
+
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    h2 {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 100px;
+
+      line-height: 100%;
+      letter-spacing: -2%;
+    }
+  }
+
+  .email {
+    display: none;
+  }
+
+  .email_adress {
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+
+    line-height: 120%;
+    letter-spacing: 0%;
+    transform: rotate(-90deg);
+  }
+
+  .github {
+    margin-top: 16px;
+  }
+
+  .hero__stripe-right {
+    height: 186px;
+  }
+
+  .hero__stripe-left {
+    height: 240px;
+  }
+
   .hero__wrapper-stripe {
     padding: 0 96px 0 96px;
   }
   .hero__run-bunner {
-    transform: skewY(-0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .email_adress {
+    display: none;
   }
 }

@@ -8,10 +8,12 @@
   flex-direction: column;
 
   p {
-    font-family: 'Karla Medium', monospace;
-    font-weight: 500;
+    font-family: Fira Code;
+    font-weight: 700;
+    font-style: Bold;
     font-size: 20px;
-    line-height: 100%;
+
+    line-height: 120%;
     letter-spacing: 0%;
     color: color.$textSecondary-color;
   }
@@ -19,9 +21,10 @@
   h2 {
     color: color.$textSecondary-color;
     font-family: 'Fira Code', monospace;
-    font-style: bold;
     font-weight: 700;
-    font-size: 40px;
+    font-style: Bold;
+    font-size: 56px;
+
     line-height: 100%;
     letter-spacing: -3%;
     hyphens: auto;
@@ -50,16 +53,45 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 32px;
+
+  p {
+    font-family: 'Karla', monospace;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
 }
 
 .contact__container-body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  span {
+  }
+}
+
+.contact__container-text {
+  font-family: 'Karla', monospace;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+
+  line-height: 120%;
+  letter-spacing: 0%;
 }
 
 .contact__container-description-text {
   color: color.$textSecondary-color;
+  font-family: 'Karla', monospace;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+
+  line-height: 120%;
+  letter-spacing: 0%;
 }
 
 .contact__container-form-wrapper {
@@ -82,6 +114,16 @@
   // Animate: Sofort;
   animation-duration: 0ms;
   cursor: pointer;
+
+  p {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
 
   input {
     background: transparent;
@@ -180,5 +222,21 @@
 @media (min-width: 768px) {
   .contact {
     margin: 140px 96px 0 96px;
+  }
+
+  .contact__container {
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .contact__container_flex {
+    flex: 1;
+  }
+  .contact__container-form {
+    flex: 1;
+  }
+
+  .contact__container-description {
+    border: none;
   }
 }

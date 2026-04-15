@@ -6,7 +6,8 @@
     },
     "hero": {
         "headline": "Frontend Developer",
-        "buttonOne": "Lets talk!",
+        "buttonOne": "My Projects",
+        "buttonTwo": "Let`s talk",
         "available": "Available for remote work",
         "job": "Full Stack Developer",
         "location": "Germany, Hamburg",
@@ -34,8 +35,8 @@
     },
     "friends": {
         "headline": "What my colleagues say about me",
-        "friendOne": "First friend's opinion about me",
-        "friendOneAnswer": "Full Stack Developer",
+        "friendOne": "H.Janisch - Team Partner",
+        "friendOneAnswer": "Lukas hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
         "friendTwo": "Second friend's opinion about me",
         "friendTwoAnswer": "Frontend Developer",
         "friendThree": "Third friend's opinion about me",

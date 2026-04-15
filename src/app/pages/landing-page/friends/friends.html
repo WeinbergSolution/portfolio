@@ -7,8 +7,14 @@
   </div>
   <div class="friends__content-card">
     <p>{{ 'friends.friendOneAnswer' | translate }}</p>
-
-    <p class="friends__name"><span>----&nbsp;</span>{{ 'friends.friendOne' | translate }}</p>
+    <div class="friends__stripe__name">
+      <div class="friends__stripes">
+        <div class="friends__stripe"></div>
+      </div>
+      <div class="friends_name">
+        <p class="friends__name">{{ 'friends.friendOne' | translate }}</p>
+      </div>
+    </div>
   </div>
   <div class="friends__navigate-wrapper">
     <div class="friends__navigate">
@@ -21,9 +27,7 @@
         <img src="icon/Ellipse.png" alt="dot" />
       </div>
 
-      <div>
-        <img class="arrow" src="icon/arrow_forward.png" alt="right arrow" />
-      </div>
+      <div><img class="arrow" src="icon/arrow_forward.png" alt="right arrow" /></div>
     </div>
   </div>
 </section>

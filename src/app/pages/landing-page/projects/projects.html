@@ -6,16 +6,20 @@
     <div class="projects__container-projects">
       @for (project of projects; track project.name) {
         <div class="projects__container-project">
-          <h3>{{ project.name }}</h3>
+          <div class="projects__container-project-header">
+            <h3>{{ project.name }}</h3>
+          </div>
+          <div>
+            @for (skill of project.skills; track $index) {
+              @if ($index <= project.skills.length - 1) {
+                <span class="projects__container-project-skill">{{ skill }}</span>
 
-          @for (skill of project.skills; track $index) {
-            @if ($index <= project.skills.length - 1) {
-              <span class="projects__container-project-skill">{{ skill }}</span>
-              @if ($index < project.skills.length - 1) {
-                <span class="projects__stripe">|</span>
+                @if ($index < project.skills.length - 1) {
+                  <span class="projects__stripe">|</span>
+                }
               }
             }
-          }
+          </div>
         </div>
       }
     </div>

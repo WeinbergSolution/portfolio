@@ -6,8 +6,8 @@
     },
     "hero": {
         "headline": "Web Developer",
-        "buttonOne": "Meine Projekte",
-        "buttonTwo": "Lass uns Reden",
+        "buttonOne": "Projekte",
+        "buttonTwo": "Reden wir!",
         "available": "Verfügbar für Remote Arbeit",
         "job": "Full Stack Entwickler",
         "location": "Hamburg Deutschland",
