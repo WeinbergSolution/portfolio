@@ -16,17 +16,17 @@
     "about": {
         "headline": "Who I am",
         "aboutMe": "About me",
-        "descriptionOne": "Hey there, I'm Lukas! Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-        "descriptionTwo": "Where are you based? Would you be open to working remotely or potentially relocating?",
-        "descriptionThree": "Show that you are open-minded. Are you enthusiastic about learning new technologies and  improving your skills?",
-        "descriptionFour": "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+        "descriptionOne": "Hey, I'm Pascal! I am currently pursuing further training as a Fullstack Developer, specializing in modern web technologies. My main focus is on frontend development using HTML, CSS, JavaScript, and frameworks like Angular, while continuously expanding my backend skills. My goal is to build user-friendly, high-performance, and innovative web applications.",
+        "descriptionTwo": "I am based in Norderstedt, Germany, and flexible regarding remote work, hybrid roles.",
+        "descriptionThree": "I am open-minded and enthusiastic about learning new technologies and continuously improving my skills as an aspiring Fullstack Developer.",
+        "descriptionFour": "My problem-solving approach is based on analytical thinking, creativity, persistence, and collaboration, aiming for efficient and elegant solutions."
     },
     "skills": {
         "headline": "Skills Set",
-        "description": "A short introduction of your skills. Highlight your experience of  using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.",
+        "description": "I possess strong skills in modern frontend technologies such as HTML, CSS, JavaScript, TypeScript, and Angular, along with experience in Material Design. Additionally, I work with Git, Firebase, and REST APIs and am familiar with agile methodologies like Scrum. As an aspiring Fullstack Developer, I am driven by a strong growth mindset and continuously motivated to learn new technologies and adapt to the ever-evolving world of web development.",
         "descriptionTwo": "You need",
         "descriptionThree": "another skill?",
-        "descriptionFour": "Feel free to contact me. I look forward to expanding on my previous knowledge..",
+        "descriptionFour": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
         "button": "Let's talk"
     },
     "future": {
@@ -36,7 +36,7 @@
     "friends": {
         "headline": "What my colleagues say about me",
         "friendOne": "H.Janisch - Team Partner",
-        "friendOneAnswer": "Lukas hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
+        "friendOneAnswer": "Pascal has proven to be a reliable team partner. His technical skills and proactive approach were crucial to the success of our project.",
         "friendTwo": "Second friend's opinion about me",
         "friendTwoAnswer": "Frontend Developer",
         "friendThree": "Third friend's opinion about me",

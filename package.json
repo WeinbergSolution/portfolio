@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --base-href /angular-projects/portfolio/",
+    "build": "ng build --base-href /angular-projects/modul-15/portfolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

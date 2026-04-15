@@ -15,15 +15,15 @@
     },
     "about": {
         "headline": "Wer ich bin",
-        "aboutMe": "Über mich",
-        "descriptionOne": "Hey, ich bin Lukas! Schreibe ein paar Informationen über dich, die einen Bezug zur IT haben. Warum begeisterst du dich fürs Programmieren? Was ist deine Inspirationsquelle, um deine Programmierkenntnisse zu verbessern?",
-        "descriptionTwo": "Wo bist du ansässig? Wärst du offen für Remote-Arbeit oder möglicherweise für einen Umzug?",
-        "descriptionThree": "Zeige, dass du aufgeschlossen bist. Bist du begeistert davon, neue Technologien zu erlernen und deine Fähigkeiten zu verbessern?",
-        "descriptionFour": "Eine kurze Beschreibung deiner Herangehensweise an Problemlösungen. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst? Du kannst einige Schlüsselbegriffe einbeziehen, wie zum Beispiel: analytisches Denken, Kreativität, Ausdauer und Zusammenarbeit."
+        "aboutMe": "Über micht",
+        "descriptionOne": "Hey, ich bin Pascal! Derzeit absolviere ich eine Weiterbildung zum Fullstack-Entwickler und spezialisiere mich auf moderne Webtechnologien. Mein Schwerpunkt liegt im Frontend mit HTML, CSS, JavaScript sowie Frameworks wie Angular, während ich kontinuierlich meine Backend-Kenntnisse erweitere. Mein Ziel ist es, benutzerfreundliche, leistungsstarke und innovative Webanwendungen zu entwickeln.",
+        "descriptionTwo": "Ich bin in Norderstedt, Deutschland, ansässig und flexibel hinsichtlich Remote-Arbeit, hybrider Modelle.",
+        "descriptionThree": "Ich bin aufgeschlossen und begeistert davon, neue Technologien zu erlernen und meine Fähigkeiten als angehender Fullstack-Entwickler kontinuierlich zu verbessern.",
+        "descriptionFour": "Meine Problemlösungen basieren auf analytischem Denken, Kreativität, Ausdauer und Zusammenarbeit, mit dem Ziel, effiziente und elegante Lösungen zu entwickeln."
     },
     "skills": {
         "headline": "Fähigkeiten",
-        "description": "Eine kurze Vorstellung deiner Fähigkeiten. Hebe deine Erfahrung im Umgang mit verschiedenen Frontend-Technologien hervor und betone deine Offenheit, neue Technologien zu erlernen und dich an sie anzupassen. Zeige, wie wichtig es dir ist, mit den schnellen Veränderungen in der Webentwicklung Schritt zu halten.",
+        "description": "Ich verfüge über fundierte Kenntnisse in modernen Frontend-Technologien wie HTML, CSS, JavaScript, TypeScript und Angular sowie Erfahrung mit Material Design. Darüber hinaus arbeite ich mit Git, Firebase und REST-APIs und bin mit agilen Methoden wie Scrum vertraut. Als angehender Fullstack-Entwickler zeichne ich mich durch ein starkes Growth Mindset aus und bin stets motiviert, neue Technologien zu erlernen und mich an die dynamische Welt der Webentwicklung anzupassen.",
         "descriptionTwo": "Benötigst du",
         "descriptionThree": "eine weitere Fähigkeit?",
         "descriptionFour": "Kontaktiere mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
@@ -36,7 +36,7 @@
     "friends": {
         "headline": "Was meine Kollegen über mich sagen",
         "friendOne": "H.Janisch - Team Partner",
-        "friendOneAnswer": "Lukas hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
+        "friendOneAnswer": "Pascal hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
         "friendTwo": "Zweite Meinung eines Freundes über mich",
         "friendTwoAnswer": "Frontend Entwickler",
         "friendThree": "Dritte Meinung eines Freundes über mich",
