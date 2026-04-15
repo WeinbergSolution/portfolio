@@ -3,9 +3,9 @@
 <div [class]="classToggled ? `burger_popp` : `burger_popp_toggle`">
   <div [class]="classToggled ? `burger__wrapper` : `burger_popp_toggle`">
     <button class="burger_popp__button" (click)="toggleField()">X</button>
-    <a [routerLink]="['/about']">{{ 'navbar.about' | translate }}</a>
-    <a [routerLink]="['/skills']">{{ 'navbar.skills' | translate }}</a>
-    <a [routerLink]="['/future']">{{ 'navbar.projects' | translate }}</a>
+    <a [routerLink]="['/']" fragment="about">{{ 'navbar.about' | translate }}</a>
+    <a [routerLink]="['/']" fragment="skills">{{ 'navbar.skills' | translate }}</a>
+    <a [routerLink]="['/']" fragment="projects">{{ 'navbar.projects' | translate }}</a>
     <div class="language_change">
       <span
         [class.active]="translate.currentLang === 'en'"

@@ -42,13 +42,10 @@
     }
 
     .btn {
-      width: auto;
+      width: 140px;
       height: 48px;
       border-radius: 100px;
       border: 1px solid color.$textPrimary-color;
-
-      padding-right: 24px;
-      padding-left: 24px;
     }
 
     .run-text-btn-container-text {
@@ -151,6 +148,10 @@
     /* Optional: smoothing for the movement */
     will-change: transform;
 
+    :hover {
+      border-color: color.$textPrimary-color;
+    }
+
     @keyframes bounce {
       0%,
       100% {
@@ -217,6 +218,10 @@
     align-items: center;
     overflow: hidden;
   }
+}
+
+.hero__arrow-down:hover {
+  border-color: color.$textPrimary-color;
 }
 
 // Laufschrift Bunner //

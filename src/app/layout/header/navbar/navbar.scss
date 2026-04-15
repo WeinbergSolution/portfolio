@@ -56,6 +56,34 @@
   align-items: center;
 }
 
+.navbar-link {
+  position: relative;
+  color: color.$textPrimary-color;
+  transition: color 0.3s ease;
+  padding: 5px 0; /* Etwas Platz für den Punkt */
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px; /* Abstand unter dem Text */
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 6px;
+    height: 6px;
+    background-color: color.$btn-color; /* Die Farbe deines Logos */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: color.$textSecondary-color; /* Text wird beim Hover etwas heller/deutlicher */
+
+    &::after {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     @include mixins.hide-element;

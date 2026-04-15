@@ -1,6 +1,8 @@
 <header class="header">
   <div class="header__wrapper">
-    <img class="header__image" src="img/Vector.png" alt="Header Image" />
+    <a [routerLink]="['/']" fragment="hero">
+      <img class="header__image" src="img/pw_logo.png" alt="Header Image"
+    /></a>
     <app-navbar />
     <app-burger class="none" />
   </div>

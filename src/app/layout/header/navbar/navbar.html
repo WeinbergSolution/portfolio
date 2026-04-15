@@ -8,7 +8,11 @@
     >
   </div>
   <p></p>
-  <a [routerLink]="['/about']">{{ 'navbar.about' | translate }}</a>
-  <a [routerLink]="['/skills']">{{ 'navbar.skills' | translate }}</a>
-  <a [routerLink]="['/future']">{{ 'navbar.projects' | translate }}</a>
+  <a class="navbar-link" [routerLink]="['/']" fragment="about">{{ 'navbar.about' | translate }}</a>
+  <a class="navbar-link" [routerLink]="['/']" fragment="skills">{{
+    'navbar.skills' | translate
+  }}</a>
+  <a class="navbar-link" [routerLink]="['/']" fragment="projects">{{
+    'navbar.projects' | translate
+  }}</a>
 </section>

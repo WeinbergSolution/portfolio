@@ -4,7 +4,9 @@
       <div class="footer__content-wrapper-outer">
         <div class="footer__content-wrapper-inner">
           <div class="footer__img-wrapper">
-            <img class="footer__image" src="img/Vector.png" alt="Footer Image" />
+            <a [routerLink]="['/']" fragment="hero">
+              <img class="footer__image" src="img/pw_logo.png" alt="Footer Image"
+            /></a>
             <div class="footer__name-wrapper">
               <p>Pascal</p>
               <p>Weinberg</p>
@@ -17,19 +19,25 @@
         </div>
         <span class="footer__copyright">© Pascal Weinberg 2026</span>
         <div class="footer__sozial-wrapper">
-          <a href="https://github.com/pascal-weinberg" target="_blank" rel="noopener noreferrer">
+          <a
+            class="navbar-link"
+            href="https://github.com/WeinbergSolution/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/pascal-weinberg/"
+            class="navbar-link"
+            href="https://de.linkedin.com/in/pascal-weinberg-6a45b1114"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
           </a>
 
-          <a href="mailto:pascalgiercke@gmail.com"> Email </a>
-          <a [routerLink]="['/imprint']">Legal Notice</a>
+          <a class="navbar-link" href="mailto:pascalgiercke@gmail.com"> Email </a>
+          <a class="navbar-link" [routerLink]="['/']" fragment="imprint">Legal Notice</a>
         </div>
       </div>
       <span class="footer__copyright_mobile">© Pascal Weinberg 2026</span>

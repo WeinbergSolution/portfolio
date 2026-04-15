@@ -1,16 +1,16 @@
-<Section class="hero">
+<Section class="hero" id="hero">
   <div class="hero__content">
     <p>{{ 'hero.headline' | translate }}</p>
     <h2>Mr. Weinberg</h2>
     <div class="btn-wrapper">
-      <a [routerLink]="['/future']" class="btn">
+      <a [routerLink]="['/']" fragment="projects" class="btn">
         <div class="run-text-btn-container">
           <p class="run-text-btn-container-text-two">
             {{ 'hero.buttonOne' | translate }}
           </p>
         </div>
       </a>
-      <a [routerLink]="['/contact']" class="btn">
+      <a [routerLink]="['/']" fragment="contact" class="btn">
         <div class="run-text-btn-container">
           <p class="run-text-btn-container-text">
             {{ 'hero.buttonTwo' | translate }}
