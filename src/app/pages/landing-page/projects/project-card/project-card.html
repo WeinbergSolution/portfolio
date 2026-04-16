@@ -1,0 +1,99 @@
+<section class="projectCard">
+  <div class="projectCard__button__wrapper">
+    <a [routerLink]="['/']" fragment="projects" class="btn">
+      <button class="projectCard_popp__button">X</button></a
+    >
+  </div>
+
+  <div class="projectCard__wrapper">
+    <div class="projectCard__img__wrapper">
+      <img src="img/join.jpg" alt="Project-Thumbnail" />
+    </div>
+
+    <div class="projectCard__info__wrapper">
+      <div class="projectCard__headline">
+        <span>01</span>
+        <h1>Join</h1>
+      </div>
+      <div class="projectCard__text__wrapper">
+        <div>
+          <h2>{{ 'projectsCard.headline' | translate }}</h2>
+        </div>
+        <div>
+          <p>
+            Task manager inspired by the Kanban System. Create and organize tasks using drag and
+            drop functions, assign users and categories.
+          </p>
+        </div>
+        <div class="projectCard__icon__wrapper">
+          <div class="projectCard__icon">
+            <div class="projectCard__flex">
+              <img src="icon/css_project_thumbnail.png" alt="Css Icon" />
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="projectCard__icon">
+            <div class="projectCard__flex">
+              <img src="icon/html_project_thumbnail.png" alt="Css Icon" />
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="projectCard__icon">
+            <div class="projectCard__flex">
+              <img src="icon/Firebase_project_thumbnail.png" alt="Css Icon" />
+              <p>Firebase</p>
+            </div>
+          </div>
+          <div class="projectCard__icon">
+            <div class="projectCard__flex">
+              <img src="icon/Angular_project_thumbnail.png" alt="Css Icon" />
+              <p>Angular</p>
+            </div>
+          </div>
+          <div class="projectCard__icon">
+            <div class="projectCard__flex">
+              <img src="icon/Typescript_project_thumbnail.png" alt="Css Icon" />
+              <p>TypeScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrapper">
+        <a
+          href="https://github.com/WeinbergSolution/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+        >
+          <div class="btn__img__wrapper">
+            <p>GitHub</p>
+            <img src="icon/projects_arrow_outward.png" alt="Arrow up Icon" />
+          </div>
+        </a>
+        <a
+          href="https://pascalweinberg.developerakademie.net/bookstore/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          class="btn"
+        >
+          <div class="btn__img__wrapper">
+            <p>Live Test</p>
+            <img src="icon/projects_arrow_outward.png" alt="Arrow up Icon" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <a [routerLink]="['/']" fragment="projects"
+      ><div class="projectCard__footer__wrapper">
+        <p>{{ 'projectsCard.next' | translate }}</p>
+        <img
+          src="icon/project_footer_arrow.png"
+          alt="Arrow next Project"
+          class="projectCard__arrow-right"
+        />
+      </div>
+    </a>
+  </div>
+</section>

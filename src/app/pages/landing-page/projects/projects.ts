@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { ProjectCard } from './project-card/project-card';
 
 @Component({
   selector: 'app-projects',
-  imports: [RouterLink, TranslatePipe],
+  imports: [RouterLink, TranslatePipe, ProjectCard],
   templateUrl: './projects.html',
   styleUrls: ['./projects.scss'],
 })

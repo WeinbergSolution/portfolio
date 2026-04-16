@@ -1,0 +1,243 @@
+@use '../../../../styles/abstacts/variables' as color;
+
+.projectCard {
+  margin: 95px 0px 0 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  background: linear-gradient(
+    to top right,
+    color.$primary-color 40%,
+    #0f2f2a 60%,
+    color.$secondary-color 100%
+  );
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 32px;
+  }
+
+  .projectCard__info__wrapper {
+  }
+
+  &__img__wrapper {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    span {
+      font-family: 'Karla';
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 72px;
+
+      line-height: 100%;
+      letter-spacing: -2%;
+      color: color.$textSecondary-color;
+    }
+    h1 {
+      font-family: 'Fira Code';
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 56px;
+
+      line-height: 80%;
+      letter-spacing: -3%;
+    }
+  }
+
+  &__text__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 32px;
+    p {
+      font-family: 'Karla';
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
+    h2 {
+      font-family: 'Fira Code';
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 20px;
+
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: color.$textSecondary-color;
+    }
+  }
+
+  &__icon__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .projectCard__flex {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__icon {
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .projectCard__button__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .projectCard_popp__button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+
+    margin: 16px 16px 0px 0px;
+    padding: 16px;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+.btn__img__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid white;
+  height: 48px;
+  gap: 10px;
+
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 100px;
+  border-width: 1px;
+
+  img {
+    width: 10px;
+    height: 10px;
+  }
+
+  p {
+    font-family: 'Karla';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    white-space: nowrap;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+}
+
+.projectCard__footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-bottom: 30px;
+
+  p {
+    font-family: 'Karla';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: color.$textSecondary-color;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.projectCard__arrow-right {
+  // animation //
+  display: inline-block;
+  /* Essential for transform/animation to work */
+  /* The Animation: name | duration | timing | repetition */
+  animation: bounce 2s ease-in-out infinite;
+  /* Optional: smoothing for the movement */
+  will-change: transform;
+  cursor: pointer;
+  margin-right: 20px;
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(10px);
+      /* Moves down by 10px */
+    }
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 768px) {
+  .projectCard {
+    margin: 95px 96px 0 96px;
+    border-radius: 30px;
+    padding: 0 80px 80px 80px;
+  }
+  .projectCard__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 0px;
+  }
+
+  .projectCard__info__wrapper {
+    flex: 1;
+    padding-right: 40px;
+  }
+
+  .projectCard__img__wrapper {
+    flex: 1;
+    min-width: 200px;
+    height: 300px;
+  }
+
+  .projectCard__footer__wrapper {
+    display: none;
+  }
+}

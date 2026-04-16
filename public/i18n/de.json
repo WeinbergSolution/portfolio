@@ -33,6 +33,10 @@
         "headline": "Zukünftige Projekte",
         "description": "Hier finden Sie eine Auswahl meiner Arbeiten"
     },
+    "projectsCard": {
+        "headline": "Infos zu dem Project",
+        "next": "Nächstes Project"
+    },
     "friends": {
         "headline": "Was meine Kollegen über mich sagen",
         "friendOne": "H.Janisch - Team Partner",
