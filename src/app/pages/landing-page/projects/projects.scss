@@ -1,4 +1,12 @@
 @use '../../../styles/abstacts/variables' as color;
+@use '../../../styles/abstacts/mixins' as mixins;
+.burger_popp_toggle {
+  @include mixins.hide-element;
+}
+
+.activ {
+  display: block;
+}
 
 .projects {
   margin: 100px 16px 100px 16px;
@@ -80,13 +88,56 @@
     padding-right: 3px;
   }
 }
+.projects__container-project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 13px;
+    height: 13px;
+    top: 8px;
+    left: 197px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+}
 
 .projects__container-project:hover {
   background: rgba(61, 207, 182, 0.3);
+  .arrow_up {
+    display: block;
+  }
 }
 
 .gap16 {
   margin-bottom: 16px;
+}
+
+.arrow_up {
+  display: none;
+}
+
+.projects__thumbnail {
+}
+
+.projects__wrapper__all {
+}
+
+.content {
+  background-image: url(../../../../../public/img/Elpolloloco.png);
+  width: 320px;
+  height: 320px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .projects__thumbnail {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {

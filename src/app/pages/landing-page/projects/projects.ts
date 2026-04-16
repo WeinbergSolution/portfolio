@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { ProjectCard } from './project-card/project-card';
+import { ProjectCard, Project } from './project-card/project-card';
 
 @Component({
   selector: 'app-projects',
@@ -11,60 +11,95 @@ import { ProjectCard } from './project-card/project-card';
 })
 export class Projects {
   projects = [
-    {
-      name: 'Sakura',
-      description: 'Eine Ramen-Resturant Website',
-      status: 'done',
-      skills: ['HTML', 'CSS'],
-    },
+    // {
+    //   name: 'Sakura',
+    //   description: 'future.sakura.descriptionText',
+    //   status: 'done',
+    //   skills: ['HTML', 'CSS'],
+    //   link: '#',
+    //   linkProject: '#',
+    // },
 
-    {
-      name: 'Kochwelt',
-      description: 'Eine Rezepte-Website, welche im Team umgesetzt wurde',
-      status: 'done',
-      skills: ['HTML', 'CSS'],
-    },
-    {
-      name: 'Fotogram',
-      description: 'Bildergalerie mit der Möglichkeit, durch Bilder zu sliden',
-      status: 'done',
-      skills: ['HTML', 'CSS'],
-    },
-    {
-      name: 'Bookstore',
-      description: 'Büchershop erstellt mit Objecten Ramen-Resturant Website',
-      status: 'done',
-      skills: ['HTML', 'CSS', 'JavaScript'],
-    },
+    // {
+    //   name: 'Kochwelt',
+    //   description: 'future.kochwelt.descriptionText',
+    //   status: 'done',
+    //   skills: ['HTML', 'CSS'],
+    //   link: '#',
+    //   linkProject: '#',
+    // },
+    // {
+    //   name: 'Fotogram',
+    //   description: 'future.fotogram.descriptionText',
+    //   status: 'done',
+    //   skills: ['HTML', 'CSS'],
+    //   link: 'https://github.com/WeinbergSolution/fotogram',
+    //   linkProject: '#',
+    // },
+    // {
+    //   name: 'Bookstore',
+    //   description: 'future.bookstore.descriptionText',
+    //   status: 'done',
+    //   skills: ['HTML', 'CSS', 'JavaScript'],
+    //   link: 'https://github.com/WeinbergSolution/bookstore',
+    //   linkProject: '#',
+    // },
     {
       name: 'Betsll-App',
-      description: 'Klon von Lieferando',
+      description: 'future.bestell-app.descriptionText',
       status: 'done',
       skills: ['HTML', 'CSS'],
+      link: 'https://github.com/WeinbergSolution/bestellApp',
+      linkProject: '#',
+      logo: 'img/1.jpg',
     },
-    {
-      name: 'Pokedex',
-      description: 'Pokedex erstellt mit einer externen API',
-      status: 'done',
-      skills: ['HTML', 'CSS', 'JavaScript'],
-    },
+    // {
+    //   name: 'Pokedex',
+    //   description: 'future.pokedex.descriptionText',
+    //   status: 'done',
+    //   skills: ['HTML', 'CSS', 'JavaScript'],
+    //   link: '#',
+    //   linkProject: '#',
+    // },
     {
       name: 'Pollo Loco',
-      description: '2D Jump and Run Spiel mit Objektorierntierung',
+      description: 'future.polloloco.descriptionText',
       status: 'done',
       skills: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://github.com/WeinbergSolution/ElPolloLoco',
+      linkProject: '#',
+      logo: 'img/el_Pollo_Loco.jpg',
     },
-    {
-      name: 'Portfolio',
-      description: 'Ein Portfolio mit meinen Projekten und Skills',
-      status: 'in progress',
-      skills: ['HTML', 'SCSS', 'Typescript', 'Angular '],
-    },
+    // {
+    //   name: 'Portfolio',
+    //   description: 'future.portfolio.descriptionText',
+    //   status: 'in progress',
+    //   skills: ['HTML', 'CSS', 'TypeScript', 'Angular'],
+    //   link: 'https://github.com/WeinbergSolution/portfolio',
+    //   linkProject: '#',
+    // },
     {
       name: 'Join',
-      description: 'Kanban Board mit Backend in Gruppenarbeit',
+      description: 'future.join.descriptionText',
+      descriptionEn: 'Hello',
       status: 'upcoming',
       skills: ['Angular', 'HTML', 'CSS', 'Firebase'],
+      link: '#',
+      linkProject: '#',
+      logo: 'img/join.jpg',
     },
   ];
+
+  currentProject = <Project>{};
+  currentIndex = 0;
+
+  updateProject(index: number) {
+    this.currentProject = this.projects[index];
+    this.currentIndex = index;
+  }
+
+  classToggled = false;
+  toggleField() {
+    this.classToggled = !this.classToggled;
+  }
 }

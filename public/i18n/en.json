@@ -31,7 +31,34 @@
     },
     "future": {
         "headline": "Future Projects",
-        "description": "Here you can find a selection of my work"
+        "description": "Here you can find a selection of my work",
+        "sakura": {
+            "descriptionText": "A ramen restaurant website"
+        },
+        "kochwelt": {
+            "descriptionText": "A recipe website developed as a team project"
+        },
+        "fotogram": {
+            "descriptionText": "An image gallery with the ability to slide through pictures"
+        },
+        "bookstore": {
+            "descriptionText": "A bookstore created using objects"
+        },
+        "bestell-app": {
+            "descriptionText": "A clone of Lieferando"
+        },
+        "pokedex": {
+            "descriptionText": "A Pokédex created using an external API"
+        },
+        "polloloco": {
+            "descriptionText": "A 2D platformer developed using object-oriented programming"
+        },
+        "portfolio": {
+            "descriptionText": "A portfolio showcasing my projects and skills"
+        },
+        "join": {
+            "descriptionText": "A Kanban board with a backend, developed as a group project"
+        }
     },
     "projectsCard": {
         "headline": "About the Project",

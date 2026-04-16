@@ -1,9 +1,18 @@
 @use '../../../../styles/abstacts/variables' as color;
+@use '../../../../styles/abstacts/mixins' as mixins;
 
 .projectCard {
-  margin: 95px 0px 0 0px;
+  position: absolute;
+  z-index: 900;
+  right: 10px;
+  left: 10px;
+  margin: 95px 12px 0 12px;
   padding-left: 12px;
   padding-right: 12px;
+  border-radius: 20px;
+
+  border-radius: 20px;
+  border: 1px solid color.$textSecondary-color;
 
   background: linear-gradient(
     to top right,
@@ -17,9 +26,6 @@
     flex-direction: column;
     padding-top: 32px;
     gap: 32px;
-  }
-
-  .projectCard__info__wrapper {
   }
 
   &__img__wrapper {
@@ -124,7 +130,7 @@
 
 .btn-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 16px;
   padding-top: 32px;
 }
@@ -146,6 +152,8 @@
   img {
     width: 10px;
     height: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
   }
 
   p {
@@ -158,13 +166,23 @@
     letter-spacing: 0%;
   }
 }
+.btn__img__wrapper:hover {
+  border: 1px solid color.$textSecondary-color;
+
+  p {
+    color: color.$textSecondary-color;
+  }
+  img {
+    transform: translate(4px, -3px);
+  }
+}
 
 .projectCard__footer__wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  padding-bottom: 30px;
+  margin-bottom: 50px;
 
   p {
     font-family: 'Karla';
@@ -180,30 +198,23 @@
   img {
     width: 18px;
     height: 18px;
+    transition: transform 0.3s ease-in-out;
   }
 }
 
 .projectCard__arrow-right {
-  // animation //
   display: inline-block;
-  /* Essential for transform/animation to work */
-  /* The Animation: name | duration | timing | repetition */
-  animation: bounce 2s ease-in-out infinite;
-  /* Optional: smoothing for the movement */
-  will-change: transform;
+
   cursor: pointer;
   margin-right: 20px;
+}
 
-  @keyframes bounce {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-
-    50% {
-      transform: translateX(10px);
-      /* Moves down by 10px */
-    }
+.projectCard__footer__wrapper:hover {
+  p {
+    color: color.$textPrimary-color;
+  }
+  img {
+    transform: translate(4px, 0px);
   }
 }
 
@@ -215,6 +226,15 @@
     margin: 95px 96px 0 96px;
     border-radius: 30px;
     padding: 0 80px 80px 80px;
+    width: auto;
+    height: 500px;
+    display: flex;
+  }
+
+  .projectCard_popp__button {
+    position: absolute;
+    right: 65px;
+    top: 35px;
   }
   .projectCard__wrapper {
     display: flex;
@@ -231,6 +251,36 @@
     padding-right: 40px;
   }
 
+  .projectCard__headline {
+    span {
+      font-size: 128px;
+    }
+    h1 {
+      font-size: 64px;
+    }
+  }
+
+  .projectCard__text__wrapper {
+    p {
+      font-size: 18px;
+    }
+  }
+  .projectCard .projectCard__flex {
+    p {
+      font-size: 16px;
+    }
+  }
+  .btn-wrapper {
+    justify-content: flex-start;
+
+    gap: 32px;
+    padding-top: 32px;
+  }
+
+  .projectCard__icon__wrapper {
+    flex-wrap: nowrap;
+  }
+
   .projectCard__img__wrapper {
     flex: 1;
     min-width: 200px;
@@ -238,6 +288,8 @@
   }
 
   .projectCard__footer__wrapper {
-    display: none;
+    position: absolute;
+    bottom: 35px;
+    right: 65px;
   }
 }

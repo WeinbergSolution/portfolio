@@ -31,7 +31,34 @@
     },
     "future": {
         "headline": "Zukünftige Projekte",
-        "description": "Hier finden Sie eine Auswahl meiner Arbeiten"
+        "description": "Hier finden Sie eine Auswahl meiner Arbeiten",
+        "sakura": {
+            "descriptionText": "Eine Ramen-Resturant Website"
+        },
+        "kochwelt": {
+            "descriptionText": "Eine Rezepte-Website, welche im Team umgesetzt wurde"
+        },
+        "fotogram": {
+            "descriptionText": "Bildergalerie mit der Möglichkeit, durch Bilder zu sliden"
+        },
+        "bookstore": {
+            "descriptionText": "Büchershop erstellt mit Objecten Ramen-Resturant Website"
+        },
+        "bestell-app": {
+            "descriptionText": "Klon von Lieferando"
+        },
+        "pokedex": {
+            "descriptionText": "Pokedex erstellt mit einer externen API"
+        },
+        "polloloco": {
+            "descriptionText": "2D Jump and Run Spiel mit Objektorierntierung"
+        },
+        "portfolio": {
+            "descriptionText": "Ein Portfolio mit meinen Projekten und Skills"
+        },
+        "join": {
+            "descriptionText": "Kanban Board mit Backend in Gruppenarbeit"
+        }
     },
     "projectsCard": {
         "headline": "Infos zu dem Project",

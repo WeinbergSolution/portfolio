@@ -1,28 +1,36 @@
 <section class="projects" id="projects">
-  <div class="projects__container">
-    <p class="gap16">Portfolio</p>
-    <h2>{{ 'future.headline' | translate }}</h2>
-    <span class="projects__container-description">{{ 'future.description' | translate }}</span>
-    <div class="projects__container-projects">
-      @for (project of projects; track project.name) {
-        <div class="projects__container-project">
-          <div class="projects__container-project-header">
-            <h3>{{ project.name }}</h3>
-          </div>
-          <div>
-            @for (skill of project.skills; track $index) {
-              @if ($index <= project.skills.length - 1) {
-                <span class="projects__container-project-skill">{{ skill }}</span>
+  <app-project-card [project]="currentProject" [index]="currentIndex" />
 
-                @if ($index < project.skills.length - 1) {
-                  <span class="projects__stripe">|</span>
+  <div class="projects__wrapper__all">
+    <div class="projects__container">
+      <p class="gap16">Portfolio</p>
+      <h2>{{ 'future.headline' | translate }}</h2>
+      <span class="projects__container-description">{{ 'future.description' | translate }}</span>
+
+      <div class="projects__container-projects">
+        @for (project of projects; track $index) {
+          <div
+            class="projects__container-project {{ project.name }}"
+            (click)="updateProject($index)"
+          >
+            <div class="projects__container-project-header">
+              <h3>{{ project.name }}</h3>
+              <img class="arrow_up" src="icon/portfolio_arrow_outward.png" alt="arrow-up" />
+            </div>
+            <div>
+              @for (skill of project.skills; track $index) {
+                @if ($index <= project.skills.length - 1) {
+                  <span class="projects__container-project-skill">{{ skill }}</span>
+
+                  @if ($index < project.skills.length - 1) {
+                    <span class="projects__stripe">|</span>
+                  }
                 }
               }
-            }
+            </div>
           </div>
-        </div>
-      }
+        }
+      </div>
     </div>
   </div>
 </section>
-<app-project-card />

@@ -24,7 +24,7 @@
           class="contact__container-form-wrapper"
           [class.error-border]="name?.touched && name?.invalid"
         >
-          <p [class.error-text]="name?.touched && name?.invalid">
+          <p>
             {{ 'contact.name' | translate }}
           </p>
           <input
@@ -43,7 +43,7 @@
           class="contact__container-form-wrapper"
           [class.error-border]="email?.touched && email?.invalid"
         >
-          <p [class.error-text]="email?.touched && email?.invalid">
+          <p>
             {{ 'contact.email' | translate }}
           </p>
           <input
@@ -64,7 +64,7 @@
           class="contact__container-form-wrapper"
           [class.error-border]="message?.touched && message?.invalid"
         >
-          <p [class.error-text]="message?.touched && message?.invalid">
+          <p>
             {{ 'contact.message' | translate }}
           </p>
           <textarea
