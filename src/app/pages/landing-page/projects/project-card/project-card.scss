@@ -2,7 +2,6 @@
 @use '../../../../styles/abstacts/mixins' as mixins;
 
 .projectCard {
-  position: absolute;
   z-index: 900;
   right: 10px;
   left: 10px;
@@ -223,17 +222,19 @@
 
 @media (min-width: 768px) {
   .projectCard {
+    position: absolute;
     margin: 95px 96px 0 96px;
     border-radius: 30px;
     padding: 0 80px 80px 80px;
+    left: 200px;
     width: auto;
-    height: 500px;
     display: flex;
   }
 
   .projectCard_popp__button {
     position: absolute;
-    right: 65px;
+    right: 35px;
+
     top: 35px;
   }
   .projectCard__wrapper {

@@ -28,14 +28,15 @@ export class Projects {
     //   link: '#',
     //   linkProject: '#',
     // },
-    // {
-    //   name: 'Fotogram',
-    //   description: 'future.fotogram.descriptionText',
-    //   status: 'done',
-    //   skills: ['HTML', 'CSS'],
-    //   link: 'https://github.com/WeinbergSolution/fotogram',
-    //   linkProject: '#',
-    // },
+    {
+      name: 'Fotogram',
+      description: 'future.fotogram.descriptionText',
+      status: 'done',
+      skills: ['HTML', 'CSS'],
+      link: 'https://github.com/WeinbergSolution/fotogram',
+      linkProject: 'https://pascalweinberg.developerakademie.net/fotogram/index.html',
+      logo: 'img/join.jpg',
+    },
     // {
     //   name: 'Bookstore',
     //   description: 'future.bookstore.descriptionText',
@@ -50,7 +51,7 @@ export class Projects {
       status: 'done',
       skills: ['HTML', 'CSS'],
       link: 'https://github.com/WeinbergSolution/bestellApp',
-      linkProject: '#',
+      linkProject: 'https://pascalweinberg.developerakademie.net/bestellApp/index.html',
       logo: 'img/1.jpg',
     },
     // {
@@ -67,7 +68,7 @@ export class Projects {
       status: 'done',
       skills: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://github.com/WeinbergSolution/ElPolloLoco',
-      linkProject: '#',
+      linkProject: 'https://pascalweinberg.developerakademie.net/ElPolloLoco/index.html',
       logo: 'img/el_Pollo_Loco.jpg',
     },
     // {
@@ -78,16 +79,16 @@ export class Projects {
     //   link: 'https://github.com/WeinbergSolution/portfolio',
     //   linkProject: '#',
     // },
-    {
-      name: 'Join',
-      description: 'future.join.descriptionText',
-      descriptionEn: 'Hello',
-      status: 'upcoming',
-      skills: ['Angular', 'HTML', 'CSS', 'Firebase'],
-      link: '#',
-      linkProject: '#',
-      logo: 'img/join.jpg',
-    },
+    // {
+    //   name: 'Join',
+    //   description: 'future.join.descriptionText',
+    //   descriptionEn: 'Hello',
+    //   status: 'upcoming',
+    //   skills: ['Angular', 'HTML', 'CSS', 'Firebase'],
+    //   link: 'https://pascalweinberg.developerakademie.net/fotogram/index.html',
+    //   linkProject: 'https://github.com/WeinbergSolution/fotogram',
+    //   logo: 'img/join.jpg',
+    // },
   ];
 
   currentProject = <Project>{};
